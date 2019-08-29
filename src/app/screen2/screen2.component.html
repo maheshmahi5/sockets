@@ -1,0 +1,13 @@
+<h1 style="text-align: center">Generate Code</h1>
+<!-- <button *ngIf=view class="genre" (click)="generate()">Generate code</button> -->
+<br>
+<br>
+<h2 *ngIf =view >code: "{{text1}}"</h2>
+<div  class="joincode" >
+<input *ngIf =!view  type="text" placeholder="Enter Code Here" (input)="onEvent($event)">
+</div>
+<button *ngIf =!view  class="submit"(click)="submit()">Submit</button>
+<br>
+<br>
+<button class= "next"(click)="OnNext()">Next</button>
+<button class="back" (click)="back()">Back</button>
